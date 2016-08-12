@@ -1,0 +1,30 @@
+<div class="container">
+
+    <form class="form-signin">
+    
+        <h2 class="form-signin-heading">
+            <span *ngIf="message == null">Please sign in</span>
+            <span class="red" *ngIf="message != null">{{message}}</span>
+        </h2>
+        
+        <label for="inputLogin" class="sr-only">Email address</label>   
+        <input #loginCtrl type="text" id="inputLogin" class="form-control" placeholder="User login" required autofocus>
+        
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input #passwordCtrl type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        
+        <div class="checkbox">
+            
+            <label>
+                <input #checkboxCtrl type="checkbox" value="remember-me"> Remember me
+            </label>
+            
+            <span [class.hidden]="!layout.isLoading" class="loaderIcon" style="float:right"></span>
+
+        </div>
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onLogin(loginCtrl.value, passwordCtrl.value, checkboxCtrl.checked)">Sign in</button>
+    
+    </form>
+
+</div>

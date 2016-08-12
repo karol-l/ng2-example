@@ -1,0 +1,7 @@
+typings/
+node_modules/
+app/**/*.js
+app/**/*.css
+assets/stylesheets/**/*.css
+assets/*.css
+*.js.map

@@ -1,0 +1,25 @@
+
+.not-found-block
+{
+    width: 350px;
+    margin: 0 auto;
+    
+    .logo {
+        display: block;
+        float: left;
+
+        span {
+            font-size: 100px;
+            width: 100px;
+            height: 100px;
+            color: red;
+            opacity: 0.6;
+        }
+    }
+
+    .text {
+        display: block;
+        float: right;
+        h2 { color: red; font-weight: bold; }
+    }
+}

@@ -1,0 +1,22 @@
+
+$icon-font-path: "/assets/fonts/bootstrap/"; 
+
+@import "stylesheets/_bootstrap.scss";
+
+
+
+.loaderIcon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("images/loader.gif") no-repeat center center;
+}
+
+
+.red {
+    color:red;
+}
+
+.layout-content {
+    margin-top: 60px;
+}
